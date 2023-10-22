@@ -6,10 +6,11 @@ This script converts all image files in a certain folder to .webp file format.
 2. Open a terminal window:
 - Mac: Click the Launchpad icon in the Dock, type `terminal` in the search field, then click Terminal.
 - Windows: Press the windows key on your keyboard and type `cmd`.
-3. Start the batch convert process by typing the following command in the terminal window:
+3. Navigate to your image folder: `cd link/to/your/image/folder`.
+4. Start the batch convert process by typing the following command in the terminal window:
 - Mac: `sh convert.sh`
 - Windows: `bash convert.sh`
-4. All .webp files will be saved in the same folder as the original images.
+5. All .webp files will be saved in the same folder as the original images.
 
 ## Notes
 - The script is based on a [Stack Overflow answer](https://stackoverflow.com/a/26565210/5263954) with minor addition. Thanks HaL!
