@@ -1,8 +1,8 @@
 # Batch convert to .webp
-This script converts all image files in a certain folder to .webp file format.
+This script converts all image files in a certain folder to the *.webp* file format. No need to use same shady online converters.
 
 ## How to use
-1. Copy the files `cwebp` and `executable.sh` to the folder with all the images that you want to convert into the .webp format.
+1. Copy the files `cwebp` and `executable.sh` to the folder with all the images that you want to convert into the *.webp* format.
 2. Open a terminal window:
 - Mac: Click the Launchpad icon in the Dock, type `terminal` in the search field, then click Terminal.
 - Windows: Press the windows key on your keyboard and type `cmd`.
