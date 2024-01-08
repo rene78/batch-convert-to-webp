@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Batch convert to WebP</title>
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Search Engine -->
+  <meta name="description" content="Explanation on how to locally convert multiple picture files to the WebP format">
+  <meta name="keywords" content="image converter, jpg, jpeg, png, tiff, tif, WebP, shell, command line tool, bash" />
+
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="Batch convert to WebP">
+  <meta itemprop="description"
+    content="Explanation on how to locally convert multiple picture files to the WebP format">
+
+  <!-- Open Graph general (Facebook, Twitter, ...) -->
+  <meta property="og:title" content="Batch convert to WebP">
+  <meta property="og:description"
+    content="Explanation on how to locally convert multiple picture files to the WebP format">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon related -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/img/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Style related -->
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+  <a href="https://github.com/rene78/batch-convert-to-webp" class="gh-corner" title="Go to GitHub repository">
+    <img decoding="async" loading="lazy" width="149" height="149"
+      src="/img/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" data-recalc-dims="1">
+  </a>
+
+  <h1>Batch convert to WebP</h1>
+  <p class="intro-text">This guide walks you through effortlessly <b>converting all images within a designated folder into the contemporary
+    WebP format</b>, eliminating the necessity for using potentially dubious online conversion tools.</p>
+  <h2>How to use</h2>
+  <details>
+    <summary>Windows</summary>
+    <p> Windows does not natively support the execution of shell scripts. One way to run the script below is to install
+      <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a> on your computer. Other options
+      are highlighted in <a href="https://stackoverflow.com/questions/26522789/how-to-run-sh-on-windows-command-prompt"
+        target="_blank" rel="noopener noreferrer">this StackOverflow thread</a>.
+    </p>
+    <ol>
+      <li>Download the <i>convert.sh</i> script and the <i>cwebp</i> executable file.</li>
+      <ul>
+        <li><a href="/convert.sh">convert.sh</a></li>
+        <li><a href="/cwebp.exe">cwebp (1.3.2-windows-x64)</a></li>
+      </ul>
+      <li>Copy those 2 files to the folder with the images that you want to convert to <i>.webp</i>.</li>
+      <li>Open <i>Git Bash</i> by pressing the Windows key and type <i>git bash</i>
+      <li>Navigate to your image folder:
+        <p>
+          <code>cd <i>link/to/your/image/folder</i></code>
+        </p>
+      </li>
+      <li>Start the batch convert process by typing the following command in the terminal window: <p>
+          <code>sh convert.sh</code>
+        </p>
+      </li>
+      <li>All <i>.webp</i> files will be saved in a subfolder called <i>webp</i>.</li>
+    </ol>
+  </details>
+  <details>
+    <summary>macOS</summary>
+    <ol>
+      <li>Download the <i>convert.sh</i> script and the <i>cwebp</i> executable file.</li>
+      <ul>
+        <li><a href="/convert.sh">convert.sh</a></li>
+        <li><a href="/cwebp">cwebp (1.3.2-mac-arm64)</a></li>
+      </ul>
+      <li>Copy those 2 files to the folder with the images that you want to convert to <i>.webp</i>.</li>
+      <li>Open a terminal window by clicking the Launchpad icon in the Dock and typing <i>terminal</i> in the search
+        field. Then click on <i>Terminal</i>.</li>
+      <li>Navigate to your image folder: <p>
+          <code>cd link/to/your/image/folder</code>
+        </p>
+      </li>
+      <li>Start the batch convert process by typing the following command in the terminal window: <p>
+          <code>sh convert.sh</code>
+        </p>
+      </li>
+      <li>All <i>.webp</i> files will be saved in a subfolder called <i>webp</i>.</li>
+    </ol>
+  </details>
+  <h2>Notes</h2>
+  <ul>
+    <li>The script is based on a <a href="https://stackoverflow.com/a/26565210/5263954">Stack Overflow answer</a> with
+      some minor additions. Thanks InfinitePrime!</li>
+    <li>It works with jpg, png and tiff files.</li>
+    <li>I have tested it on Mac and Windows 10. If there are issues on Linux machines with the script please report
+      back.</li>
+    <li>You can change the quality level of the converted image file. Go to <i>convert.sh</i> and change the number on
+      line 5. 80 is the default value. Higher means better image quality but larger file sizes.</li>
+    <li><i>cwebp</i> was copied from Google's <a
+        href="https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html" target="_blank"
+        rel="noopener noreferrer">libwebp codec distribution</a>, version 1.3.2. You might want to update to a later
+      version or use a different one, e.g. for Linux or pre Silicon Macs. The <i>cwebp</i> executable is saved in the /bin folder.</li>
+  </ul>
+</body>
+
+</html>

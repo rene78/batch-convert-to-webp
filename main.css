@@ -1,0 +1,31 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Mulish, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-right: 130px;
+}
+
+code {
+  background-color: #e9e9e9;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.gh-corner {
+  position: absolute;
+  right: 0;
+  opacity: 0.7;
+}
+
+.intro-text {
+  margin-right: 60px;
+}
