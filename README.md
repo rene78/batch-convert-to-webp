@@ -30,15 +30,15 @@ Windows does not natively support the execution of shell scripts. One way to run
 
 1. Download the ***convert.sh*** script and the ***cwebp*** executable files.
 
-    [convert.sh](/convert.sh)
+    [convert.sh](https://rene78.github.io/batch-convert-to-webp/convert.sh)
 
-    [cwebp (1.3.2-mac-arm64)](/cwebp)
+    [cwebp (1.3.2-mac-arm64)](https://rene78.github.io/batch-convert-to-webp/cwebp)
 
 2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
 3. Right-click on this image folder and select `New Terminal at Folder`
 
     ![Picture of App][screenshot]
-
+    
     [screenshot]: img/Screenshot_RMB_Open_Terminal.png "Select 'New Terminal at Folder'"
 
 5. Start the batch convert process by typing the following command in the terminal window:
