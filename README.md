@@ -23,7 +23,27 @@ Windows does not natively support the execution of shell scripts. One way to run
     `sh convert.sh`
 
 6. All _.webp_ files will be saved in a subfolder called ***webp***.
+</details>
 
+<details>
+<summary>macOS</summary>
+
+1. Download the ***convert.sh*** script and the ***cwebp*** executable files.
+
+    [convert.sh](https://rene78.github.io/batch-convert-to-webp/convert.sh)
+
+    [cwebp (1.3.2-mac-arm64)](https://rene78.github.io/batch-convert-to-webp/cwebp)
+
+2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
+3. Open a terminal window by clicking <kbd>⌘ Command</kbd> + <kbd>Space</kbd> and typing `terminal` in the search field. Then click on _Terminal_.
+4. Navigate to your image folder:
+
+    `cd link/to/your/image/folder`
+
+5. Start the batch convert process by typing the following command in the terminal window:
+    `sh convert.sh`
+
+6. All _.webp_ files will be saved in a subfolder called ***webp***.
 </details>
 
 ## Notes
