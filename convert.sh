@@ -4,5 +4,5 @@ shopt -s nocaseglob #matches filenames in a case-insensitive fashion, e.g. ".jpg
 for file in *.{png,jpg,jpeg,tiff,tif} #Loop through all image files in folder.
 do
   ./cwebp -q 80 "$file" -o "webp/${file%.*}.webp" #Create webp image file with quality level 80 and save it into the wepb subfolder
-  echo "${file}" #Just some bugfixing code. Can be ignored.
+  #echo "${file}" #Just some bugfixing code. Can be ignored.
 done
