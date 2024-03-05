@@ -1,5 +1,5 @@
 # Batch convert to .webp
-The script in this repository converts all images within a designated folder into the contemporary WebP format, eliminating the necessity for using potentially dubious online conversion tools.
+The script in this repository converts all images within a designated folder into the contemporary WebP format. No need to install software or upload your images to potentially dodgy conversion websites.
 
 ## How to use
 <details>
