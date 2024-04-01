@@ -1,8 +1,51 @@
 # Batch convert to .webp
-The script in this repository converts all images within a designated folder into the contemporary WebP format, eliminating the necessity for using potentially dubious online conversion tools.
+The script in this repository converts all images within a designated folder into the contemporary WebP format. No need to install software or upload your images to potentially dodgy conversion websites.
 
 ## How to use
-Follow the instructions on the [website](https://rene78.github.io/batch-convert-to-webp).
+<details>
+<summary>Windows</summary>
+
+Windows does not natively support the execution of shell scripts. One way to run the script below is to install [Git](https://git-scm.com/) on your computer. Other options are highlighted in [this Stack Overflow thread](https://stackoverflow.com/questions/26522789/how-to-run-sh-on-windows-command-prompt).
+
+1. Download the ***convert.sh*** script and the ***cwebp*** executable files.
+
+    [convert.sh](https://rene78.github.io/batch-convert-to-webp/convert.sh)
+
+    [cwebp (1.3.2-windows-x64)](https://rene78.github.io/batch-convert-to-webp/cwebp.exe)
+
+2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
+3. Open Git Bash by pressing the <kbd>Windows</kbd> key and type `git bash`
+4. Navigate to your image folder:
+
+    `cd link/to/your/image/folder`
+
+5. Start the batch convert process by typing the following command in the terminal window:
+    `sh convert.sh`
+
+6. All _.webp_ files will be saved in a subfolder called ***webp***.
+</details>
+
+<details>
+<summary>macOS</summary>
+
+1. Download the ***convert.sh*** script and the ***cwebp*** executable files.
+
+    [convert.sh](https://rene78.github.io/batch-convert-to-webp/convert.sh)
+
+    [cwebp (1.3.2-mac-arm64)](https://rene78.github.io/batch-convert-to-webp/cwebp)
+
+2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
+3. Right-click on this image folder and select `New Terminal at Folder`
+
+    ![Picture of App][screenshot]
+    
+    [screenshot]: img/Screenshot_RMB_Open_Terminal.png "Select 'New Terminal at Folder'"
+
+5. Start the batch convert process by typing the following command in the terminal window:
+    `sh convert.sh`
+
+6. All _.webp_ files will be saved in a subfolder called ***webp***.
+</details>
 
 ## Notes
 - The script is based on a [Stack Overflow answer](https://stackoverflow.com/a/26565210/5263954) with some minor additions. Thanks InfinitePrime!
