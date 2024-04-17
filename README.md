@@ -14,7 +14,7 @@ Windows does not natively support the execution of shell scripts. One way to run
     [cwebp (1.3.2-windows-x64)](https://rene78.github.io/batch-convert-to-webp/cwebp.exe)
 
 2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
-3. Open Git Bash by pressing the <kbd>Windows</kbd> key and type `git bash`
+3. Open Git Bash by pressing the <kbd>Windows</kbd> key and typing `git bash`
 4. Navigate to your image folder:
 
     `cd link/to/your/image/folder`
