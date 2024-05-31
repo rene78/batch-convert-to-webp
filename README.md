@@ -11,7 +11,7 @@ Windows does not natively support the execution of shell scripts. One way to run
 
     [convert.sh](https://rene78.github.io/batch-convert-to-webp/convert.sh)
 
-    [cwebp (1.3.2-windows-x64)](https://rene78.github.io/batch-convert-to-webp/cwebp.exe)
+    [cwebp (1.4.0-windows-x64)](https://rene78.github.io/batch-convert-to-webp/cwebp.exe)
 
 2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
 3. Open Git Bash by pressing the <kbd>Windows</kbd> key and typing `git bash`
@@ -32,7 +32,7 @@ Windows does not natively support the execution of shell scripts. One way to run
 
     [convert.sh](https://rene78.github.io/batch-convert-to-webp/convert.sh)
 
-    [cwebp (1.3.2-mac-arm64)](https://rene78.github.io/batch-convert-to-webp/cwebp)
+    [cwebp (1.4.0-mac-arm64)](https://rene78.github.io/batch-convert-to-webp/cwebp)
 
 2. Copy those 2 files to the folder with the images that you want to convert to _.webp_.
 3. Right-click on this image folder and select `New Terminal at Folder`
@@ -52,4 +52,5 @@ Windows does not natively support the execution of shell scripts. One way to run
 - It works with jpg, png and tiff files.
 - I have tested it on Mac and Windows 10. If there are issues on Linux machines with the script please report back.
 - You can change the quality level of the converted image file. Go to `convert.sh` and change the number on line 6. 80 is the default value. Higher means better image quality but larger file sizes.
-- `cwebp` was copied from Google's [libwebp codec distribution](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html), version 1.3.2. You might want to update to a later version or use a different one, e.g. for Linux or pre Silicon Macs. The <i>cwebp</i> executable is saved in the /bin folder.
+- `cwebp` was copied from Google's [libwebp codec distribution](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html), version 1.4.0. You might want to update to a later version or use a different one, e.g. for Linux or pre Silicon Macs. The <i>cwebp</i> executable is saved in the /bin folder.
+- If you want something a little more user friendly with an UI I would recommend [webp2jpg-online](https://github.com/renzhezhilu/webp2jpg-online), a web app that converts your images locally.
