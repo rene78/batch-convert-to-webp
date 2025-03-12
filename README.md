@@ -5,9 +5,7 @@ The script in this repository converts all images within a designated folder int
 <details>
 <summary>Windows</summary>
 
-> [!NOTE]
-> Windows does not natively support the execution of shell scripts. One way to run the script below is to install [Git](https://git-scm.com/) on your computer.
-Other options are highlighted in [this Stack Overflow thread](https://stackoverflow.com/questions/26522789/how-to-run-sh-on-windows-command-prompt).
+> **_NOTE:_**  Windows does not natively support the execution of shell scripts. One way to run the script below is to install [Git](https://git-scm.com/) on your computer. Other options are highlighted in [this Stack Overflow thread](https://stackoverflow.com/questions/26522789/how-to-run-sh-on-windows-command-prompt).
 
 1. Download the ***convert.sh*** script and the ***cwebp*** executable files.
 
